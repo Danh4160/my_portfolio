@@ -1,11 +1,21 @@
-import React from 'react'
+"use client"
+
 import Image from 'next/image'
 import FaceIcon from '@/images/grad_pic_body.jpg'
+import { motion } from "framer-motion"
+import Link from 'next/link'
+import { BsArrowRight, BsLinkedin } from "react-icons/bs"
+import { HiDownload } from "react-icons/hi"
 
 const Introduction= () => {
   return (
     
-    <section className="">
+    <motion.section 
+        className="text-center relative"
+        initial={{ y: 50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        
+        >
         <div className="flex items-center justify-center">
             <div className='relative'>
                 <Image 
@@ -18,8 +28,21 @@ const Introduction= () => {
                 />
             </div>
         </div>
+        <h1 
+            className="relative font-medium mt-4 text-lg text-black"
+            >
+            Hi, I'm Dan. I'am looking for jobs. Please hire me !
+        </h1>
+        <div className="flex justify-center">
+            <Link className="relative items-center bg-gray-900 text-white gap-1 px-7 py-3 rounded-full" href="#contact">
+                Contact Me <BsArrowRight />
+            </Link>
 
-    </section>
+            <a className="relative items-center bg-gray-900 text-white gap-1 px-7 py-3 rounded-full" href="/Dan_Resume_2023_EN_ABB.pdf" download>
+                Download CV <HiDownload />
+            </a>
+        </div>
+    </motion.section>
   )
 }
 
