@@ -6,6 +6,7 @@ import { motion } from "framer-motion"
 import Link from 'next/link'
 import { BsArrowRight, BsLinkedin } from "react-icons/bs"
 import { HiDownload } from "react-icons/hi"
+import { FaGithub } from "react-icons/fa"
 
 const Introduction= () => {
   return (
@@ -33,13 +34,28 @@ const Introduction= () => {
             >
             Hi, I'm Dan. I'am looking for jobs. Please hire me !
         </h1>
-        <div className="flex justify-center">
-            <Link className="relative items-center bg-gray-900 text-white gap-1 px-7 py-3 rounded-full" href="#contact">
+        <div className="flex items-center justify-center gap-2 pt-2 font-medium">
+            <Link className="bg-black flex items-center rounded-full gap-2 px-5 py-2" href="#contact">
                 Contact Me <BsArrowRight />
             </Link>
 
-            <a className="relative items-center bg-gray-900 text-white gap-1 px-7 py-3 rounded-full" href="/Dan_Resume_2023_EN_ABB.pdf" download>
+            <a 
+                className="bg-white text-black flex items-center rounded-full gap-2 px-5 py-2" 
+                href="/Dan_Resume_2023_EN_ABB.pdf" download
+                >
                 Download CV <HiDownload />
+            </a>
+            <a 
+                className="bg-white text-black flex items-center rounded-full gap-2 px-2 py-2" 
+                href="https://www.linkedin.com/in/dan-h-552136134/"
+                >
+                <BsLinkedin />
+            </a>
+            <a 
+                className="bg-white text-black flex items-center rounded-full gap-2 px-2 py-2" 
+                href="https://github.com/Danh4160"
+                >
+                <FaGithub />
             </a>
         </div>
     </motion.section>
