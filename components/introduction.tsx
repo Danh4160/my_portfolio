@@ -13,9 +13,11 @@ const Introduction= () => {
     
     <motion.section 
         className="text-center relative"
-        initial={{ y: 50, opacity: 0 }}
+        initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        
+        transition = {{ 
+            delay: 0.1,
+         }}
         >
         <div className="flex items-center justify-center">
             <div className='relative'>
@@ -38,23 +40,23 @@ const Introduction= () => {
             className="flex items-center justify-center gap-2 pt-2 font-medium"
             >
             <Link 
-                className="bg-black flex items-center rounded-full gap-2 px-5 py-2 outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition" 
+                className="group bg-black flex items-center rounded-full gap-2 px-5 py-2 p-0 outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition" 
                 href="#contact"
                 >
-                Contact Me <BsArrowRight />
+                Contact me here <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
             </Link>
 
             <motion.a 
-                className="bg-white text-black flex items-center rounded-full gap-2 px-5 py-2 " 
+                className="group bg-white text-black flex items-center rounded-full gap-2 px-5 py-2 outline-none border border-black/10" 
                 href="/Dan_Resume_2023_EN_ABB.pdf" download
                 whileHover={{
                     scale: 1.1,
                   }}
                 >
-                Download CV <HiDownload />
+                Download CV <HiDownload className="opacity-70 group-hover:translate-y-0.5 transition"/>
             </motion.a> 
             <motion.a 
-                className="bg-white text-black flex items-center rounded-full gap-2 px-2 py-2 text-[1rem]" 
+                className="bg-white text-gray-800 flex items-center rounded-full gap-2 px-2 py-2 text-[1rem] border border-black/10" 
                 href="https://www.linkedin.com/in/dan-h-552136134/"
                 whileHover={{
                     scale: 1.1,
@@ -63,7 +65,7 @@ const Introduction= () => {
                 <BsLinkedin />
             </motion.a>
             <motion.a 
-                className="bg-white text-black flex items-center rounded-full gap-2 px-2 py-2 text-[1rem]" 
+                className="bg-white text-gray-800 flex items-center rounded-full gap-2 px-2 py-2 text-[1rem] border border-black/10" 
                 href="https://github.com/Danh4160"
                 whileHover={{
                     scale: 1.1,
