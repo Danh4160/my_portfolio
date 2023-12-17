@@ -34,29 +34,43 @@ const Introduction= () => {
             >
             Hi, I'm Dan. I'am looking for jobs. Please hire me !
         </h1>
-        <div className="flex items-center justify-center gap-2 pt-2 font-medium">
-            <Link className="bg-black flex items-center rounded-full gap-2 px-5 py-2" href="#contact">
+        <div 
+            className="flex items-center justify-center gap-2 pt-2 font-medium"
+            >
+            <Link 
+                className="bg-black flex items-center rounded-full gap-2 px-5 py-2 outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition" 
+                href="#contact"
+                >
                 Contact Me <BsArrowRight />
             </Link>
 
-            <a 
-                className="bg-white text-black flex items-center rounded-full gap-2 px-5 py-2" 
+            <motion.a 
+                className="bg-white text-black flex items-center rounded-full gap-2 px-5 py-2 " 
                 href="/Dan_Resume_2023_EN_ABB.pdf" download
+                whileHover={{
+                    scale: 1.1,
+                  }}
                 >
                 Download CV <HiDownload />
-            </a>
-            <a 
-                className="bg-white text-black flex items-center rounded-full gap-2 px-2 py-2" 
+            </motion.a> 
+            <motion.a 
+                className="bg-white text-black flex items-center rounded-full gap-2 px-2 py-2 text-[1rem]" 
                 href="https://www.linkedin.com/in/dan-h-552136134/"
+                whileHover={{
+                    scale: 1.1,
+                  }}
                 >
                 <BsLinkedin />
-            </a>
-            <a 
-                className="bg-white text-black flex items-center rounded-full gap-2 px-2 py-2" 
+            </motion.a>
+            <motion.a 
+                className="bg-white text-black flex items-center rounded-full gap-2 px-2 py-2 text-[1rem]" 
                 href="https://github.com/Danh4160"
+                whileHover={{
+                    scale: 1.1,
+                  }}
                 >
                 <FaGithub />
-            </a>
+            </motion.a>
         </div>
     </motion.section>
   )
