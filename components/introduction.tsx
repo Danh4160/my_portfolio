@@ -34,7 +34,7 @@ const Introduction= () => {
         <h1 
             className="relative font-medium mt-4 text-lg text-black"
             >
-            Hi, I'm Dan. I'am looking for jobs. Please hire me !
+            Hi, I'm Dan.
         </h1>
         <div 
             className="flex items-center justify-center gap-2 pt-2 font-medium"
