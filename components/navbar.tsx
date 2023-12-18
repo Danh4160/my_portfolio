@@ -2,7 +2,6 @@
 
 import { links } from "@/lib/data";
 import { motion } from "framer-motion"
-import { link } from "fs";
 import Link from "next/link";
 
 const Header = () => {
