@@ -4,7 +4,7 @@ import Project from './project'
 
 const Projects = () => {
   return (
-    <section>
+    <section id="projects" className="scroll-mt-28">
         <h2 className="text-3xl font-medium text-black mb-5 text-center">
             My Projects
         </h2>

@@ -12,11 +12,12 @@ const Introduction= () => {
   return (
     
     <motion.section 
-        className="text-center relative max-w-[50rem]"
+        id="home"
+        className="text-center relative max-w-[50rem] scroll-mt-[30rem]"
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition = {{ 
-            delay: 0.1,
+            delay: 0.2,
          }}
         >
         <div className="flex items-center justify-center">
