@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-white text-white relative h-[4000px] pt-32">
+      <body className="bg-white text-white relative h-[5000px] pt-32">
         <div 
           className="absolute top-[2rem] w-[30rem] h-[30rem] left-[40rem] z-100 rounded-full blur-[10rem] bg-blue-300">
         </div>
