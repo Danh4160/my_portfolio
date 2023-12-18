@@ -12,7 +12,7 @@ const Introduction= () => {
   return (
     
     <motion.section 
-        className="text-center relative"
+        className="text-center relative max-w-[50rem]"
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition = {{ 
@@ -34,7 +34,11 @@ const Introduction= () => {
         <h1 
             className="relative font-medium mt-4 text-lg text-black"
             >
-            Hi, I'm Dan.
+            <span className="font-bold">Hello, I'm Ricardo.</span> I'm a{" "}
+            <span className="font-bold">full-stack developer</span> with{" "}
+            <span className="font-bold">8 years</span> of experience. I enjoy
+            building <span className="italic">sites & apps</span>. My focus is{" "}
+            <span className="underline">React (Next.js)</span>.
         </h1>
         <div 
             className="flex items-center justify-center gap-2 pt-2 font-medium"
