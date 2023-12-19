@@ -13,15 +13,15 @@ import { useEffect } from 'react'
 
 const Introduction= () => {
     const { ref, inView } = useInView({
-        threshold: 0.2
+        threshold: 0
     });
-    const { setActiveSection } = useActiveSectionContext();
+    const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
 
     useEffect(() => {
-        if (inView) {
-            setActiveSection("Home");
+        if (inView && Date.now() - timeOfLastClick > 1000) {
+          setActiveSection("Home");
         }
-    }), [inView, setActiveSection]
+      }), [inView, setActiveSection, timeOfLastClick]
 
 
   return (

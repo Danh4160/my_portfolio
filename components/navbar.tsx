@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useActiveSectionContext } from "@/context/active-section";
 
 const Header = () => {
-  const { activeSection, setActiveSection } = useActiveSectionContext();
+  const { activeSection, setActiveSection, setTimeOfLastClick} = useActiveSectionContext();
   
   return (
     <header className="z-[999] relative">
@@ -26,7 +26,10 @@ const Header = () => {
                 animate={{ y: 0, opacity: 1 }}
               >
               <Link
-                onClick={() => setActiveSection(link.name)}
+                onClick={() => {
+                  setTimeOfLastClick(Date.now())
+                  setActiveSection(link.name)}
+                }
                 className=                
                   {activeSection === link.name ? "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-black dark:hover:text-gray-400" :
                     "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-white dark:hover:text-gray-300"}
