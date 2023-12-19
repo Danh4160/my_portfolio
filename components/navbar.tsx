@@ -36,11 +36,14 @@ const Header = () => {
                 {activeSection === link.hash && (
                   <motion.div
                     layoutId="active-pill"
-                    className="absolute inset-0 rounded-full bg-white"
+                    className="absolute inset-0 bg-white"
+                    style={{
+                      borderRadius: 9999,
+                    }}
                   >
                   </motion.div>
                 )}
-                <span className="relative">{link.name}</span>
+                <span className="relative z-10">{link.name}</span>
               </Link>
             </motion.li>
           ))}
