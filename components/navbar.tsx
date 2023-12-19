@@ -2,13 +2,12 @@
 
 import { links } from "@/lib/data";
 import { motion } from "framer-motion"
-import { useState } from "react";
 import Link from "next/link";
+import { useActiveSectionContext } from "@/context/active-section";
 
 const Header = () => {
-  const [activeSection, setActiveSection] = useState('Home')
-
-
+  const { activeSection, setActiveSection } = useActiveSectionContext();
+  
   return (
     <header className="z-[999] relative">
         <motion.div className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border 
@@ -27,23 +26,28 @@ const Header = () => {
                 animate={{ y: 0, opacity: 1 }}
               >
               <Link
-                onClick={() => setActiveSection(link.hash)}
+                onClick={() => setActiveSection(link.name)}
                 className=                
-                  {activeSection === link.hash ? "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-black dark:hover:text-gray-400" :
+                  {activeSection === link.name ? "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-black dark:hover:text-gray-400" :
                     "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-white dark:hover:text-gray-300"}
                 href={link.hash}
               >
-                {activeSection === link.hash && (
+                {activeSection === link.name && (
                   <motion.div
-                    layoutId="active-pill"
-                    className="absolute inset-0 bg-white"
+                    layoutId="activeSection"
+                    className="absolute inset-0 bg-white  -z-10"
                     style={{
                       borderRadius: 9999,
+                    }}
+                    transition={{
+                      type: "spring",
+                      stiffness: 380,
+                      damping: 30
                     }}
                   >
                   </motion.div>
                 )}
-                <span className="relative z-10">{link.name}</span>
+                <span className="relative">{link.name}</span>
               </Link>
             </motion.li>
           ))}

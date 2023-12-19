@@ -7,8 +7,23 @@ import Link from 'next/link'
 import { BsArrowRight, BsLinkedin } from "react-icons/bs"
 import { HiDownload } from "react-icons/hi"
 import { FaGithub } from "react-icons/fa"
+import { useInView } from 'react-intersection-observer'
+import { useActiveSectionContext } from '@/context/active-section'
+import { useEffect } from 'react'
 
 const Introduction= () => {
+    const { ref, inView } = useInView({
+        threshold: 0.2
+    });
+    const { setActiveSection } = useActiveSectionContext();
+
+    useEffect(() => {
+        if (inView) {
+            setActiveSection("Home");
+        }
+    }), [inView, setActiveSection]
+
+
   return (
     
     <motion.section 
@@ -19,6 +34,7 @@ const Introduction= () => {
         transition = {{ 
             delay: 0.2,
          }}
+        ref={ref}
         >
         <div className="flex items-center justify-center">
             <div className='relative'>
