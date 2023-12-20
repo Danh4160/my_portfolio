@@ -19,7 +19,7 @@ const Projects = () => {
       }), [inView, setActiveSection, timeOfLastClick]
 
   return (
-    <section ref={ref} id="projects" className="scroll-mt-28">
+    <section ref={ref} id="projects" className="scroll-mt-28 mb-28">
         <h2 className="text-3xl font-medium text-black mb-5 text-center">
             My Projects
         </h2>
