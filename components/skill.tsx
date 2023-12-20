@@ -37,10 +37,10 @@ useEffect(() => {
 
 
 return (
-  <section id="skills" ref={ref} className="text-black max-w-[45rem] items-center justify-center scroll-mt-28">
-    <h2 className="text-3xl font-medium text-black mb-10 text-center">
+  <section id="skills" ref={ref} className="text-black max-w-[45rem] items-center justify-center scroll-mt-28 mb-28">
+    <h3 className="text-3xl font-medium text-black mb-10 text-center">
             Skills
-    </h2>
+    </h3>
     <ul className="flex flex-wrap justify-center gap-2 text-lg">
       {skillsData.map((skills, index) => (
         <motion.li 
