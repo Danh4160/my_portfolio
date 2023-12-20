@@ -3,8 +3,8 @@ import { skillsData } from '@/lib/data'
 import { useInView } from 'react-intersection-observer'
 import { useActiveSectionContext } from "@/context/active-section"
 import { useEffect } from 'react'
-import { animate, motion, stagger } from 'framer-motion'
-import { once } from 'events'
+import { motion } from 'framer-motion'
+import { AiOutlineLike } from "react-icons/ai";
 
 
 const fadeAnimationVariants = {
@@ -44,7 +44,7 @@ return (
     <ul className="flex flex-wrap justify-center gap-2 text-lg">
       {skillsData.map((skills, index) => (
         <motion.li 
-            className="bg-white border border-black/[0.1] rounded-lg px-3 py-3" 
+            className="flex items-center bg-blue-100/[0.1] border border-black/[0.1] rounded-lg px-3 py-3 gap-1"
             key={index}
             variants={fadeAnimationVariants}
             initial="initial"
@@ -53,8 +53,13 @@ return (
                 once: true,
             }}
             custom={index}
-        >
-            {skills}
+        >   
+
+            {index <= 10 && (
+                <AiOutlineLike />
+            )}
+            <span>{skills}</span>
+            
         </motion.li>
       ))}
     </ul>
