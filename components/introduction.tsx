@@ -61,7 +61,7 @@ const Introduction= () => {
             className="flex items-center justify-center gap-2 pt-2 font-medium"
             >
             <Link 
-                className="group bg-black flex items-center rounded-full gap-2 px-5 py-2 p-0 outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition" 
+                className="group bg-black text-white flex items-center rounded-full gap-2 px-5 py-2 p-0 outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition" 
                 href="#contact"
                 >
                 Contact me here <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
