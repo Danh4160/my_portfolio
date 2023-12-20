@@ -37,7 +37,7 @@ useEffect(() => {
 
 
 return (
-  <section ref={ref} className="text-black max-w-[45rem] items-center justify-center">
+  <section id="skills" ref={ref} className="text-black max-w-[45rem] items-center justify-center scroll-mt-28">
     <h2 className="text-3xl font-medium text-black mb-10 text-center">
             Skills
     </h2>
