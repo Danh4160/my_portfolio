@@ -68,13 +68,24 @@ const Introduction= () => {
 
             <motion.a 
                 className="group bg-white text-black flex items-center rounded-full gap-2 px-5 py-2 outline-none border border-black/10" 
-                href="/Dan_Resume_2023_EN_ABB.pdf" download
+                href="/Dan_Resume_2023_GRAD_EN.pdf" download
                 whileHover={{
                     scale: 1.1,
                   }}
                 >
-                Download CV <HiDownload className="opacity-80 group-hover:translate-y-0.5 transition"/>
+                Download English CV <HiDownload className="opacity-80 group-hover:translate-y-0.5 transition"/>
             </motion.a> 
+            <motion.a 
+                className="group bg-white text-black flex items-center rounded-full gap-2 px-5 py-2 outline-none border border-black/10" 
+                href="/Dan_Resume_2023_GRAD_FR.pdf" download
+                whileHover={{
+                    scale: 1.1,
+                  }}
+                >
+                Download French CV <HiDownload className="opacity-80 group-hover:translate-y-0.5 transition"/>
+            </motion.a>
+
+
             <motion.a 
                 className="bg-white text-gray-800 flex items-center rounded-full gap-2 px-2 py-2 text-[1rem] border border-black/10" 
                 href="https://www.linkedin.com/in/dan-h-552136134/"
