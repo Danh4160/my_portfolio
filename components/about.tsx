@@ -30,38 +30,29 @@ export function About() {
         <h2 className="text-3xl font-medium text-black mb-5">
             About Me
         </h2>
+
         <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
-      </p>
+          I initially wanted to pursue a career in education, teaching students about the 
+          laws of physics. This goal turned upside down when my college professor ignited in me a passion
+          for programming. After completing college, I took the chance to enroll in McGill University's 
+          <span className="font-medium"> Software Engineering</span> program. Four years have finally passed,
+          and I have learned so much. 
+          <span className="italic"> My favorite part of programming</span> is the <span className="font-medium">problem-solving</span> aspect. I{" "}
+          <span className="underline">love</span> the feeling of finally figuring out a solution to a problem. 
+          This feeling is even more satisfying when I am{" "}
+          <span className="font-medium">collaborating</span> with other people !{" "}
+          <span>I am familiar with <span className="font-medium">Object Oriented Programming languages</span> such as <span className="font-medium">Java and C++</span>. I extremely familiar with 
+            <span className="font-medium"> Python</span> for data engineering and for creating small Articial Intelligent agents to play with.
+            <span>I am currently looking for a full-time position as a <span className="font-medium">software developer.</span>
+            </span>
+          </span>
+        </p>
 
       <p>
         <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+        video games, going to the gym, and playing with my dog. I also enjoy building
+        mechanical keyboards and I am currently learning brazilian jiu-jitsu.
       </p>
-        {/* <p className="text-black mb-2">
-            I am a Canadian based software developer. I recently graduated from McGill University with a Software Engineering bachelor.
-        </p>
-        <p className="text-black">
-            I am a Canadian based software developer. I recently graduated from McGill University with a Software Engineering bachelor.
-        </p> */}
     </motion.section>
   )
 }
