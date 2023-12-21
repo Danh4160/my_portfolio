@@ -9,14 +9,12 @@ import { experiencesData } from "@/lib/data";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { useActiveSectionContext } from "@/context/active-section";
-import { motion } from "framer-motion"
-import Divider from './divider';
 
 
 export default function Experience() {
 
   const { ref, inView } = useInView({
-    threshold: 0.4
+    threshold: 0.7
   });
   const { setActiveSection, timeOfLastClick} = useActiveSectionContext();
 
@@ -27,11 +25,11 @@ export default function Experience() {
   }), [inView, setActiveSection, timeOfLastClick]
 
   return (
-    <section ref={ref} id="experience" className="scroll-mt-28">
+    <section ref={ref} id="experience" className="scroll-mt-28 mb-28">
       <h3 className="text-3xl font-medium text-black mb-10 text-center">
         Experience
       </h3>
-      <VerticalTimeline lineColor="black" animate={inView}>
+      <VerticalTimeline lineColor="" animate={inView}>
         {
           experiencesData.map((item, index) => (
             <React.Fragment key={index}>
@@ -51,7 +49,7 @@ export default function Experience() {
               date={item.date}
               icon={item.icon}
               iconStyle={{
-                background:"white",
+                background:"#92a8d1",
                 fontSize: "1.5rem",
               }}
             >
