@@ -25,7 +25,7 @@ export default function Project({title, description,tags,imageUrl}: ProjectProps
         >
             <section 
                 className=
-                "relative bg-gray-100 max-w-[42rem] h-[18rem] overflow-hidden border \
+                "relative bg-gray-100 max-w-[42rem] h-[20rem] overflow-hidden border \
                 border-black/5 hover:bg-gray-200 transition rounded-lg group-even:pl-8"
              >
                 <div
@@ -36,7 +36,7 @@ export default function Project({title, description,tags,imageUrl}: ProjectProps
                     >
                         {title}
                     </h3>
-                    <p className="mt-2 mb-4 text-gray-700 leading-relaxed">
+                    <p className="mt-2 mb-7 text-gray-700 leading-relaxed">
                         {description}
                     </p>
                     <ul className="flex flex-wrap gap-2">
