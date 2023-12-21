@@ -13,7 +13,7 @@ import { useEffect } from 'react'
 
 const Introduction= () => {
     const { ref, inView } = useInView({
-        threshold: 0.1
+        threshold: 0.0
     });
     const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
 
@@ -32,6 +32,7 @@ const Introduction= () => {
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition = {{ 
+            type: "tween",
             delay: 0.2,
          }}
         ref={ref}
