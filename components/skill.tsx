@@ -55,7 +55,7 @@ return (
             custom={index}
         >   
 
-            {index <= 10 && (
+            {index <= 11 && (
                 <AiOutlineLike />
             )}
             <span>{skills}</span>
