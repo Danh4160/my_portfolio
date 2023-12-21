@@ -35,73 +35,74 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Graduated Software Engineering",
+    location: "Montreal, CA",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I graduated with a bachelor's of Software Engineering with a 3.66 / 4.00 GPA.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2020 - 2023",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Cloud Infrastructure Engineer Internship",
+    location: "Montreal, CA",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "I worked at Desjardins, a Montreal based financial institution. I deployed Azure services such as Azure Data Factory and Azure Machine learning as part of our project's cloud infrastructure.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2023",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Data Engineer Internship",
+    location: "Montreal, CA",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I worked at Hydro-Quebec, Canada's largest power utility corporation. I processed their multiple sources of data for big data analytics.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2022",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "NFTEA (NFT) Marketplace",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "Marketplace website to create (mint) and sell iconic Instagram posts as Non-Fungible-Tokens with Ethereum. I did the frontend and backend for the login and create account page.",
+    tags: ["Vue", "Angular", "JavaScript", "HTML", "CSS"],
     imageUrl: nfteaImg,
   },
   {
-    title: "rmtDev",
+    title: "Resumer Helper",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "I developed a machine learning model to help students assess how well-suited their CV is for various job titles.",
+    tags: ["Python", "NLTK", "Sklearn", "Numpy"],
     imageUrl: resumehelperImg,
   },
   {
-    title: "Word Analytics",
+    title: "Artificial Intelligent Agent (Mini-Max)",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "I developed an AI agent to participate in our class tournament. The agent plays based on the mini-max algorithm with alpha-beta pruning optimisation.",
+    tags: ["Python", "Numpy"],
     imageUrl: aiImg,
   },
 ] as const;
 
 export const skillsData = [
+  "Python",
+  "Java",
+  "C++",
+  "SQL",
+  "JavaScript",
   "HTML",
   "CSS",
-  "JavaScript",
-  "TypeScript",
+  "C",
+  "Power BI",
+  "Databricks",
+  "Git",
+  "Github",
+  "Azure Devops",
+  "YAML",
+  "Angular",
+  "REST API",
+  "Vue",
   "React",
   "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+  "Framer Motion"
 ] as const;
