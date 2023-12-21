@@ -1,6 +1,5 @@
 "use client"
 import React from 'react'
-import { FaPaperPlane } from 'react-icons/fa'
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { useActiveSectionContext } from "@/context/active-section";
