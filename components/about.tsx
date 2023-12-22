@@ -43,7 +43,7 @@ export function About() {
           <span className="font-medium">collaborating</span> with other people !{" "}
           <span>I am familiar with <span className="font-medium">Object Oriented Programming languages</span> such as <span className="font-medium">Java and C++</span>. I extremely familiar with 
             <span className="font-medium"> Python</span> for data engineering and for creating small Articial Intelligent agents to play with.
-            <span>I am currently looking for a full-time position as a <span className="font-medium">software developer.</span>
+            <span> I am currently looking for a full-time position as a <span className="font-medium">software developer.</span>
             </span>
           </span>
         </p>
