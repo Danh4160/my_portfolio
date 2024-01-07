@@ -38,7 +38,7 @@ export const experiencesData = [
     title: "Graduated Software Engineering",
     location: "Montreal, CA",
     description:
-      "I graduated with a bachelor's of Software Engineering with a 3.66 / 4.00 GPA.",
+      "I graduated McGill University with a bachelor's of Software Engineering with a 3.66 / 4.00 GPA.",
     icon: React.createElement(LuGraduationCap),
     date: "2020 - 2023",
   },
@@ -65,7 +65,7 @@ export const projectsData = [
     title: "NFTEA (NFT) Marketplace",
     description:
       "Marketplace website to create (mint) and sell iconic Instagram posts as Non-Fungible-Tokens with Ethereum. I did the frontend and backend for the login and create account page.",
-    tags: ["Vue", "Angular", "JavaScript", "HTML", "CSS"],
+    tags: ["Vue", "Java", "JavaScript", "HTML", "CSS"],
     imageUrl: nfteaImg,
   },
   {
