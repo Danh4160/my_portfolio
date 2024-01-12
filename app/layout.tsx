@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Header from "@/components/navbar"
 import ActiveSectionProvider from '@/context/active-section'
+import Footer from '@/components/footer'
 
 export const metadata: Metadata = {
   title: 'Dan Hosi | Portfolio',
@@ -28,6 +29,7 @@ export default function RootLayout({
         <ActiveSectionProvider>
           <Header />
           {children}
+          <Footer/>
         </ActiveSectionProvider>
       </body>
     </html>
