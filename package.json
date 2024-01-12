@@ -2,7 +2,7 @@
   "homepage": "https://Danh4160.github.io/my_portfolio",
   "name": "my_portfolio",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
