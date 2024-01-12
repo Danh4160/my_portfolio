@@ -34,7 +34,7 @@ export function About() {
         <p className="mb-3">
           I initially wanted to pursue a career in education, teaching students about the 
           laws of physics. This goal turned upside down when my college professor ignited in me a passion
-          for programming. After completing college, I took the chance to enroll in McGill University's 
+          for programming. After completing college, I took the chance to enroll in McGill University&apos;s 
           <span className="font-medium"> Software Engineering</span> program. Four years have finally passed,
           and I have learned so much. 
           <span className="italic"> My favorite part of programming</span> is the <span className="font-medium">problem-solving</span> aspect. I{" "}
@@ -49,7 +49,7 @@ export function About() {
         </p>
 
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
+        <span className="italic">When I&apos;m not coding</span>, I enjoy playing
         video games, going to the gym, and playing with my dog. I also enjoy building
         mechanical keyboards and I am currently learning brazilian jiu-jitsu.
       </p>
