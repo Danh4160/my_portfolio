@@ -27,7 +27,7 @@ export function About() {
         id="about"
         ref={ref}
         >
-        <h2 className="text-3xl font-medium text-black mb-5">
+        <h2 className="text-center text-3xl font-medium text-black mb-5">
             About Me
         </h2>
 
