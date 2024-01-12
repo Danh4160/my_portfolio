@@ -52,8 +52,8 @@ const Introduction= () => {
         <h1 
             className="relative font-medium mt-4 text-2xl text-black leading-8"
             >
-            <span className="font-bold">Hey there! I'm Dan, </span>a recent{" "}
-            <span className="font-bold">graduate </span>from McGill University with a bachelor's degree in Software Engineering. I have experience in{" "}
+            <span className="font-bold">Hey there! I&apos;m Dan, </span>a recent{" "}
+            <span className="font-bold">graduate </span>from McGill University with a bachelor&apos;s degree in Software Engineering. I have experience in{" "}
             <span className="font-bold italic">data engineering </span> with Python and <span className="font-bold italic"> full-stack development. </span>
             My current focus is learning React (Next.js) to craft dynamic and engaging websites.
         </h1>
