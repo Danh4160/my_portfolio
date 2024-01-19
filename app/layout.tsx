@@ -19,12 +19,12 @@ export default function RootLayout({
       <body className="bg-gray-50 text-gray-950 relative pt-32">
         <div 
           className=
-          "absolute top-[2rem] w-[30rem] h-[30rem] left-[40rem] z-100 rounded-full blur-[10rem] bg-blue-300"
+          "absolute top-[2rem] w-[30rem] h-[30rem] left-[40rem] z-100 rounded-full blur-[10rem] bg-blue-300 "
           >
         </div>
 
         <div 
-          className="absolute top-[2rem] w-[30rem] h-[30rem] right-[40rem] z-100 rounded-full blur-[10rem] bg-red-300">
+          className="absolute top-[2rem] w-[30rem] h-[30rem] right-[40rem] z-100 rounded-full blur-[10rem] bg-red-300 ">
         </div>
         <ActiveSectionProvider>
           <Header />
