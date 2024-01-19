@@ -78,7 +78,7 @@ const Introduction= () => {
             </motion.a> 
             <motion.a 
                 className="group bg-white text-black flex items-center rounded-full gap-2 px-5 py-2 outline-none border border-black/10" 
-                href="/Dan_Resume_2023_GRAD_FR.pdf" download
+                href="/Dan_Resume_2024_FR.pdf" download
                 whileHover={{
                     scale: 1.1,
                   }}
