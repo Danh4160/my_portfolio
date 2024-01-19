@@ -62,7 +62,7 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "NFTEA (NFT) Marketplace",
+    title: "NFTEA Marketplace",
     description:
       "Marketplace website to create (mint) and sell iconic Instagram posts as Non-Fungible-Tokens with Ethereum. I did the frontend and backend for the login and create account page.",
     tags: ["Vue", "Java", "JavaScript", "HTML", "CSS"],
