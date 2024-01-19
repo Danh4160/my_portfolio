@@ -3,7 +3,7 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import nfteaImg from "@/images/nftea_pic.jpg"
-import aiImg from "@/images/ai_pic.jpg"
+import aiImg from "@/images/ai_project.jpg"
 import resumehelperImg from "@/images/resume_helper_pic.jpg"
 
 export const links = [
